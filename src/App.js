@@ -1,4 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './App.css';
+import Header from './components/Header';
+import Post from './components/Post';
+import Posts from './components/Posts';
+
+import { ApolloProvider } from "react-apollo"
+import ApolloClient from 'apollo-boost';
+
+const client = new ApolloClient({
+  uri: "http://localhost:4000/graphql"
+});
+
+
+ const App = () => {
+      return (
+        <ApolloProvider client={client}>
+          <div className="App">
+            <Header />
+            <section className="App-main">
+              <Posts />
+
+            </section>
+          </div>
+        </ApolloProvider>
+      );
+    };
+    export default App;
+
+
+
+
+
+
+/*import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,6 +55,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+}*/

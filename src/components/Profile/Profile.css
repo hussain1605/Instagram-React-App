@@ -1,0 +1,62 @@
+Button{
+  background-color: grey;
+}
+
+.Page{
+
+  margin: 0 250px;
+   }
+
+
+.row1{
+
+  margin: 40px 0;
+}
+.displayPicture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block
+}
+.list{
+  padding-inline-start: 14px;
+}
+
+.list li{
+  display: inline;
+    float: left;
+    margin-right: 40px;
+
+}
+
+.User-Name{
+font-size: 24px;
+  font-family: Helvetica;
+}
+
+.profileData{
+  margin: 20px 0px auto;
+
+}
+
+.Follow{
+  margin: 0 30px;
+}
+
+
+.Tabs-list{
+  width: 100%;
+}
+
+.Posts_pictures{
+  margin-top: 50px;
+}
+
+.Posts_pictures img{
+ width: 250px;
+ border-radius: 5px;
+ margin: 10px;
+
+
+}
